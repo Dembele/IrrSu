@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (IrrSu.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  MapGen.cpp
+c:\users\bloodfall\source\repos\irrsu\irrsu\source\mapgen.cpp(22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  IrrSu.vcxproj -> C:\Users\Bloodfall\Source\Repos\IrrSu\IrrSu\x64\Debug\Source.exe
+  IrrSu.vcxproj -> C:\Users\Bloodfall\Source\Repos\IrrSu\IrrSu\x64\Debug\Source.pdb (Partial PDB)
