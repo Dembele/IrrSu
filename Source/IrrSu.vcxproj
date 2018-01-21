@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="GE.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="MapGen.h" />
     <ClInclude Include="PN.h" />
@@ -134,6 +135,7 @@
     <ClInclude Include="tileDrawer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GE.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="MapGen.cpp" />

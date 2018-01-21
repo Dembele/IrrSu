@@ -13,7 +13,7 @@ Character::~Character()
 {
 }
 
-double Character::GetMovespeed()
+int Character::GetMovespeed()
 {
 	return movespeed;
 }

@@ -6,12 +6,12 @@ void Player::setCoordinates(double x, double y)
 	position.y = y;
 }
 
-double Player::getCoordinatesX()
+int Player::getCoordinatesX()
 {
 	return position.x;
 }
 
-double Player::getCoordinatesY()
+int Player::getCoordinatesY()
 {
 	return position.y;
 }

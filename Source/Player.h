@@ -7,8 +7,8 @@ public:
 	Player();
 	~Player();
 	void setCoordinates(double x, double y);
-	double getCoordinatesX();
-	double getCoordinatesY();
+	int getCoordinatesX();
+	int getCoordinatesY();
 protected:
 	struct exp
 	{

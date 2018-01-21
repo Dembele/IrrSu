@@ -23,7 +23,12 @@ class MyEventReceiver : public IEventReceiver
 {
 public:
 	int clicked = 0;
-	MyEventReceiver(SAppContext & context) : Context(context) { }
+	MyEventReceiver() {}
+
+	void set(SAppContext context) 
+	{
+		Context = context;
+	}
 
 	virtual bool OnEvent(const SEvent& event)
 	{
@@ -87,7 +92,5 @@ public:
 	}
 
 private:
-	SAppContext & Context;
+	SAppContext Context;
 };
-
-
