@@ -1,8 +1,8 @@
 #include "GE.h"
 #define VERSION L"0.02"
-#define DEBUG_GEN_WIDTH 1000
-#define DEBUG_GEN_HEIGHT 1000
-#define TILESIZE 64
+#define DEBUG_GEN_WIDTH 2000
+#define DEBUG_GEN_HEIGHT 2000
+#define TILESIZE 16
 #define BUTTON_HEIGHT 60
 #define BUTTON_WIDTH 200
 

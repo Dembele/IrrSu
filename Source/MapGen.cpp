@@ -6,8 +6,21 @@
 
 int ** MapGen::Generate(int height, int width, int radius, unsigned int seed, double ax, double ay, double e)
 {
-	enum { WATER, SAND, GRASS, FOREST, STONE, LAST };
+	
+	enum {AIR, STONE, SAND, GRASS, FOREST, LAST };
 	int prev = -1, now = 0;
+
+	tileMap = new int*[height];
+	for (int w=0; w<width; w++)
+		tileMap[w] = new int[width];
+
+	for (int w=0; w<width; w++)
+		for (int h = 0; h < height; h++)
+			tileMap[w][h] = AIR;
+
+
+
+	/*
 	if (!mapCreated)
 	{
 		PN heightmap(seed);
@@ -152,7 +165,11 @@ int ** MapGen::Generate(int height, int width, int radius, unsigned int seed, do
 		tileMap2[3][2] = 3;
 		tileMap2[2][3] = 4;
 	}
-	return tileMap2;
+	*/
+	
+	
+
+	return tileMap;
 }
 
 irr::video::IImage* MapGen::MiniMapGen(irr::video::IVideoDriver * p, int width, int height)
@@ -167,7 +184,7 @@ irr::video::IImage* MapGen::MiniMapGen(irr::video::IVideoDriver * p, int width, 
 			{
 				switch (tileMap[h][w])
 				{
-				case 0: color.set(255, 7, 38, 89);
+				case 0: color.set(255, 0, 30, 140);
 					break;
 				case 1: color.set(255, 195, 201, 12);
 					break;
